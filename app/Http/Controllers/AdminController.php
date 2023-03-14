@@ -37,6 +37,12 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
+    public function updateview($id)
+    {
+        $data=food::find($id);
+        return view("admin.updateview",compact("data"));
+    }
+
     public function upload(Request $request)
     {
         $data=new food;

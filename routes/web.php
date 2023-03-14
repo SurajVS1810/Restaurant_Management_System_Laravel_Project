@@ -27,6 +27,8 @@ Route::post('/uploadfood',[AdminController::class,"upload"] );
 
 Route::get('/deleteuser/{id}',[AdminController::class,"deleteuser"] );
 
+Route::get('/updateview/{id}',[AdminController::class,"updateview"] );
+
 Route::get('/redirects',[HomeController::class,"redirects"] );
 
 Route::middleware([
