@@ -17,26 +17,33 @@
 
   <div style="position: relative;top:60px; right: -150px">
 
-  <form action="{{('/uploadfood')}}" method="post" enctype="multipart/form-data">
+  <form action="{{url('/update',$data->id)}}" method="post" enctype="multipart/form-data">
     @csrf
     <div>
         <label>Title</label>
-        <input style="color:blue;" type="text" name="title" placeholder="write a title" required>
+        <input style="color:blue;" type="text" name="title" value="{{$data->title}}" required>
 </div>
 
 <div>
         <label>Price</label>
-        <input style="color:blue;" type="num" name="price" placeholder="price" required>
+        <input style="color:blue;" type="num" name="price" value="{{$data->price}}" required>
 </div>
 
-<div>
-        <label>Image</label>
-        <input  type="file" name="image"  required>
-</div>
+
 
 <div>
         <label>Description</label>
-        <input style="color:blue;" type="text" name="description" placeholder="Description"  required>
+        <input style="color:blue;" type="text" name="description" value="{{$data->description}}"  required>
+</div>
+
+<div>
+        <label>old Image</label>
+        <img height="200" width="200" src="/foodimage/{{$data->image}}">
+</div>
+
+<div>
+        <label>New Image</label>
+        <input  type="file" name="image"  required>
 </div>
 
 <div>
