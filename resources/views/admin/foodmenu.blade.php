@@ -14,7 +14,7 @@
   @include("admin.navbar")
   <div style="position: relative;top:60px; right: -150px">
 
-  <form action="{{('/uploadfood')}}" method="post" enctype="multipart/form-data">
+  <form action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
     @csrf
     <div>
         <label>Title</label>
