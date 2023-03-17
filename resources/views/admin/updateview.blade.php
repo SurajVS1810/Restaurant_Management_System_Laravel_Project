@@ -54,6 +54,7 @@
 </form>
 
 </div>
+</div>
   @include("admin.adminscript") 
   </body>
 </html>
