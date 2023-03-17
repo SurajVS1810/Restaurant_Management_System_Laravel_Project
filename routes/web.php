@@ -39,6 +39,8 @@ Route::get('/viewchef',[AdminController::class,"viewchef"] );
 
 Route::get('/updatechef/{id}',[AdminController::class,"updatechef"] );
 
+Route::get('/deletechef/{id}',[AdminController::class,"deletechef"] );
+
 
 Route::post('/updatefoodchef/{id}',[AdminController::class,"updatefoodchef"] );
 

@@ -172,4 +172,11 @@ class AdminController extends Controller
 
         return redirect()->back();
     }
+
+    public function deletechef($id)
+    {
+        $data=foodchef::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
 }
