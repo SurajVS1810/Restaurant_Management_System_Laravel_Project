@@ -28,6 +28,8 @@ class HomeController extends Controller
     {
 $data=food::all();
 
+$data2=foodchef::all();
+
         $usertype=Auth::user()->usertype;
         if($usertype=='1')
         {
@@ -35,7 +37,7 @@ $data=food::all();
         }
         else
         {
-            return view("home",compact("data"));
+            return view("home",compact("data","data2"));
         }
     }
 }
