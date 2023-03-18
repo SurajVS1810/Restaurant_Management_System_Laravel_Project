@@ -49,6 +49,8 @@ Route::get('/redirects',[HomeController::class,"redirects"] );
 
 Route::post('/uploadchef',[AdminController::class,"uploadchef"] );
 
+Route::post('/addcart/{id}',[HomeController::class,"addcart"] );
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
