@@ -28,9 +28,9 @@ class HomeController extends Controller
     
     public function redirects()
     {
-$data=food::all();
+        $data=food::all();
 
-$data2=foodchef::all();
+        $data2=foodchef::all();
 
         $usertype=Auth::user()->usertype;
         if($usertype=='1')
@@ -42,6 +42,7 @@ $data2=foodchef::all();
 
             $user_id=Auth::id();
             $count=cart::where('user_id',$user_id)->count();
+          
             return view("home",compact("data","data2","count"));
         }
     }
@@ -75,7 +76,7 @@ $data2=foodchef::all();
         $count=cart::where('user_id',$id)->count();
 
         $data=cart::where('user_id',$id)->join('food','carts.food_id','=','food.id')->get();
-        return view("showcart",compact('count'));
+        return view("showcart",compact('count','data'));
 
     }
 }

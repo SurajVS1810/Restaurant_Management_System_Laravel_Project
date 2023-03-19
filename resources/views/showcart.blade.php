@@ -156,6 +156,20 @@ https://templatemo.com/tm-558-klassy-cafe
 
     </tr>
 
+
+    @foreach($data as $data)
+
+    <tr align="center">
+
+
+    <td> {{$data->title}} </th>
+    <td> {{$data->price}}  </th>
+    <td> {{$data->quantity}} </th>
+    
+
+    </tr>
+
+    @endforeach
     </table>
 
 
