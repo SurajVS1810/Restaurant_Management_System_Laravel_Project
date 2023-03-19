@@ -67,4 +67,11 @@ $data2=foodchef::all();
             return redirect('/login');
         }
     }
+
+
+    
+    public function showcart(Request $request,$id)
+    {
+        return view('showcart');
+    }
 }
