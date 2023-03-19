@@ -93,7 +93,7 @@ https://templatemo.com/tm-558-klassy-cafe
 
                       <a href="{{url('/showcart',Auth::user()->id)}}">
 
-                      Cart
+                      Cart[{{$count}}]
                     
                         </a>
 
@@ -139,6 +139,29 @@ https://templatemo.com/tm-558-klassy-cafe
             </div>
         </div>
     </header>
+
+
+
+
+    <div id="top">
+    <table align="center" bgcolor="yellow">
+
+    <tr >
+
+
+    <th style="padding:30px;">Food Name</th>
+    <th style="padding:30px;">Food Price</th>
+    <th style="padding:30px;">Quantity</th>
+    
+
+    </tr>
+
+  
+    </table>
+
+
+
+</div>
 
 
     <!-- jQuery -->

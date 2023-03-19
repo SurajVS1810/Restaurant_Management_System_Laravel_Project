@@ -72,6 +72,10 @@ $data2=foodchef::all();
     
     public function showcart(Request $request,$id)
     {
-        return view('showcart');
+        $count=cart::where('user_id',$id)->count();
+
+        
+        return view("showcart",compact('count'));
+
     }
 }
