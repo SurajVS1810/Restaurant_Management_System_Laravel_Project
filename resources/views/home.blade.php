@@ -90,7 +90,7 @@ https://templatemo.com/tm-558-klassy-cafe
 
                       <a href="{{url('/showcart',Auth::user()->id)}}">
 
-                      Cart[{{$count}}]
+                      Cart[]
                     
                         </a>
 
