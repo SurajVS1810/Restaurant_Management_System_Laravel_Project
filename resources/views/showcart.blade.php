@@ -32,6 +32,8 @@ https://templatemo.com/tm-558-klassy-cafe
 
     <link rel="stylesheet" href="assets/css/lightbox.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     </head>
     
     <body>
@@ -186,11 +188,11 @@ https://templatemo.com/tm-558-klassy-cafe
 
 <div align="center" style="padding:10px;">
 
-<button class="btn btn-primary">Order Now</button>
+<button class="btn btn-primary" id="order">Order Now</button>
 
 </div>
 
-<div align="center" style="padding:10px;">
+<div id="appear" align="center" style="padding:10px; display:none;">
 
 <div style="padding:10px;">
 <label>Name</label>
@@ -211,11 +213,35 @@ https://templatemo.com/tm-558-klassy-cafe
 
 <div style="padding:10px;">
 <input class="btn btn-success" type="submit" value="Order Confirm">
+
+<button id="close" class="btn btn-danger">Close</button>
 </div>
 
 
 </div>
 
+
+<script type="text/javascript">
+
+    $("#order").click(
+
+        function()
+        {
+            $("#appear").show();
+        }
+
+    );
+
+    $("#close").click(
+
+function()
+{
+    $("#appear").hide();
+}
+
+);
+
+    </script>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
