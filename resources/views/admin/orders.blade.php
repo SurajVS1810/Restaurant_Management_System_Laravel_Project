@@ -13,6 +13,18 @@
 
   @include("admin.navbar")
 
+  <div class="container">
+
+  <h1>Customer Orders</h1>
+
+  <form action="{{url('/search')}}" method="get">
+
+  <input type="text" name="search" style="color:blue;">
+
+  <input type="submit" value="search" class="btn btn -success">
+
+</form>
+
   <table>
 
   <tr align="center">
@@ -45,6 +57,8 @@
 
 @endforeach
 </table>
+
+</div>
 
 </div>
   @include("admin.adminscript") 
