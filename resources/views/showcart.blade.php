@@ -184,6 +184,34 @@ https://templatemo.com/tm-558-klassy-cafe
     @endforeach
     </table>
 
+<div align="center" style="padding:10px;">
+
+<button class="btn btn-primary">Order Now</button>
+
+</div>
+
+<div align="center" style="padding:10px;">
+
+<div style="padding:10px;">
+<label>Name</label>
+<input type="text" name="name" placeholder="Name">
+</div>
+
+
+
+<div style="padding:10px;">
+<label>Phone</label>
+<input type="number" name="phone" placeholder="Phone Number">
+</div>
+
+<div style="padding:10px;">
+<label>Address</label>
+<input type="text" name="address" placeholder="Address">
+</div>
+
+<div style="padding:10px;">
+<input class="btn btn-success" type="submit" value="Order Confirm">
+</div>
 
 
 </div>
