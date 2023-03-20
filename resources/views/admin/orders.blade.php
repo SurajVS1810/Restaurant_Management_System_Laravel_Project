@@ -15,7 +15,7 @@
 
   <table>
 
-  <tr>
+  <tr align="center">
 
   <td style="padding:30px;">Name</td>
   <td style="padding:30px;">Phone</td>
@@ -37,9 +37,9 @@
 <td>{{$data->phone}}</td>
 <td>{{$data->address}}</td>
 <td>{{$data->foodname}}</td>
-<td>{{$data->price}}</td>
+<td>{{$data->price}}$</td>
 <td>{{$data->quantity}}</td>
-<td>{{$data->name}}</td>
+<td>{{$data->price * $data->quantity}}$</td>
 
 </tr>
 
