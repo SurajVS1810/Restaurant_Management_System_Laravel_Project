@@ -11,11 +11,11 @@
   <div class="container-scroller">
   @include("admin.navbar")
   <div style="position: relative;top:60px; right: -150px">
-    <table bgcolor="grey" border="3px"> 
+    <table bgcolor="black" border="3px"> 
       <tr>
         <th style="padding: 30px">Name</th>
         <th style="padding: 30px">email</th>
-        <th style="padding: 30px">action</th>
+        <th style="padding: 30px">Action</th>
         
 </tr>
 

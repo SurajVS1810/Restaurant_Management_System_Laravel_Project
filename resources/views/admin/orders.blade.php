@@ -36,6 +36,7 @@
   <td style="padding:30px;">Price</td>
   <td style="padding:30px;">Quantity</td>
   <td style="padding:30px;">Total Price</td>
+  <th style="padding: 30px">Action</th>
 
 </tr>
 
@@ -49,9 +50,10 @@
 <td>{{$data->phone}}</td>
 <td>{{$data->address}}</td>
 <td>{{$data->foodname}}</td>
-<td>{{$data->price}}$</td>
+<td>{{$data->price}}</td>
 <td>{{$data->quantity}}</td>
-<td>{{$data->price * $data->quantity}}$</td>
+<td>{{$data->price * $data->quantity}}</td>
+<td><a href="{{url('/deleteorder',$data->id)}}">Delete</a></td>
 
 </tr>
 

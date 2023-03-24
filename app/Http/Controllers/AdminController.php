@@ -30,6 +30,23 @@ class AdminController extends Controller
         $data->delete();
         return redirect()->back();
     }
+    
+
+    
+    public function deletereservation($id)
+    {
+        $data=reservation::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
+
+        
+    public function deleteorder($id)
+    {
+        $data=order::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
 
     public function foodmenu()
     {

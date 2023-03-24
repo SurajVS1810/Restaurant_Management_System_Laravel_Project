@@ -27,6 +27,11 @@ Route::post('/uploadfood',[AdminController::class,"upload"] );
 
 Route::get('/deleteuser/{id}',[AdminController::class,"deleteuser"] );
 
+
+Route::get('/deletereservation/{id}',[AdminController::class,"deletereservation"] );
+
+Route::get('/deleteorder/{id}',[AdminController::class,"deleteorder"] );
+
 Route::get('/updateview/{id}',[AdminController::class,"updateview"] );
 
 Route::post('/update/{id}',[AdminController::class,"update"] );

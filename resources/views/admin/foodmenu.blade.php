@@ -12,7 +12,8 @@
 
  
   @include("admin.navbar")
-  <div style="position: relative;top:60px; right: -150px">
+ 
+  <div style="position: relative;top:30px; right: -20px">
 
   <form action="{{url('/uploadfood')}}" method="post" enctype="multipart/form-data">
     @csrf
@@ -42,6 +43,10 @@
 </div>
 
 </form>
+
+</div>
+
+<div style="position: relative;top:30px; right: 30px">
 
 <div>
 

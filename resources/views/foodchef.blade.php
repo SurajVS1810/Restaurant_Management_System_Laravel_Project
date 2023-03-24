@@ -21,11 +21,7 @@
                     <div class="chef-item">
                         <div class="thumb">
                             <div class="overlay"></div>
-                            <ul class="social-icons">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
+                           
                             <img height="300" width="200" src="chefimage/{{$data2->image}}" alt="Chef #1">
                         </div>
                         <div class="down-content">

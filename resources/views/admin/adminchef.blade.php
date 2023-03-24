@@ -15,7 +15,7 @@
 
 
 
-  <div style="position: relative;top:60px; right: -150px">
+  <div style="position: relative;top:30px; right: -20px">
 
 <form action="{{url('/uploadchef')}}" method="post" enctype="multipart/form-data">
   @csrf
@@ -42,6 +42,11 @@
 </div>
 
 </form>
+
+</div>
+
+
+<div style="position: relative;top:30px;">
 
 <div>
 

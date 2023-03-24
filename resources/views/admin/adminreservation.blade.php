@@ -15,7 +15,7 @@
 
 
   <div style="position: relative;top:60px; right: -150px">
-  <table bgcolor="grey" border="3px"> 
+  <table bgcolor="black" border="3px"> 
 
 <tr>
 <th style="padding: 30px">Name</th>
@@ -24,6 +24,7 @@
 <th style="padding: 30px">date</th>
 <th style="padding: 30px">time</th>
 <th style="padding: 30px">Message</th>
+<th style="padding: 30px">Action</th>
 
 
 </tr>
@@ -35,6 +36,7 @@
 <td>{{$data->date}}</td>
 <td>{{$data->time}}</td>
 <td>{{$data->message}}</td>
+<td><a href="{{url('/deletereservation',$data->id)}}">Delete</a></td>
 
 
 </tr>
